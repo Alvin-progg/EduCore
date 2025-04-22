@@ -16,14 +16,14 @@ struct Course {
 class GradeSystem {
 public:
     // Convert numeric grade to description based on Philippine grading system
-    // 1.0 = Excellent, 1.0-1.75 = Very Good, 1.75-2.5 = Good, 2.5-3.0 = Satisfactory, 3.0-4.0 = Passing, >4.0 = Failed
+    // 1.0 = Excellent, 1.0-1.75 = Very Good, 1.75-2.5 = Good, 2.5-3.0 = Satisfactory, 3.0-4.0 = Passing,
     static string getDescription(double grade) {
         if (grade == 0) return "Not yet graded";
         else if (grade == 1.0) return "Excellent";
         else if (grade <= 1.75) return "Very Good";
         else if (grade <= 2.5) return "Good";
         else if (grade <= 3.0) return "Satisfactory";
-        else if (grade <= 4.0) return "Passing";
+
         else return "Failed";
     }
 
